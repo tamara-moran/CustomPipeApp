@@ -1,0 +1,23 @@
+<div class="content" role="main">
+    <h2>Custom Pipes for data transformation.</h2>
+    <p>Product Detail Page.</p>
+    <br><br>
+    <table cellpadding="10" cellspacing="10">
+     <thead>
+     <tr>
+       <td><b>Brand Name </b></td>
+       <td><b> Amount </b></td>
+       <td><b> Quantity </b></td>
+       <td><b> Date </b></td>
+     </tr>
+     </thead>
+     <tbody>
+     <tr *ngFor="let order of orderDetail[id]">
+       <td> {{order.name}}</td>
+       <td> {{order.amount}}</td>
+       <td> {{order.units}}</td>
+       <td> {{order.pur_date|customDatePipe}}</td>
+     </tr>
+     </tbody>
+    </table>
+    </div>
